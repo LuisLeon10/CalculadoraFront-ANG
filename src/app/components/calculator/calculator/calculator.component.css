@@ -1,0 +1,117 @@
+input {
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+}
+
+input:focus {
+  border: 1px solid #ffffff;
+}
+
+.calculator-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.error {
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  color: #f75648;
+  text-align: center;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: auto;
+  margin: auto;
+}
+
+.results {
+  position: relative;
+  min-width: 100%;
+  width: auto; /* Ancho se ajusta automáticamente según el contenido */
+  min-height: 60px; /* Altura mínima */
+  height: auto; /* Altura se ajusta automáticamente según el contenido */
+  background-color: #292929;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: inline-block; /* Permite que el contenedor se ajuste al tamaño del contenido */
+  box-sizing: border-box;
+  word-break: break-all; /* Incluir padding y border en el tamaño total */
+}
+
+.results h2 {
+  color: #00e676;
+  font-size: 32px;
+}
+
+.controls {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn-factorial {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.operations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-results {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.operation {
+  background-color: #f84b3b;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.operation:hover {
+  background-color: #f75648;
+}
+
+.numeric {
+  background-color: #2e2e2e;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.numeric:hover {
+  background-color: #3f3e3e;
+}
+
+@media (max-width: 520px) {
+  .calculator {
+    width: 90%;
+    height: 50%;
+  }
+}

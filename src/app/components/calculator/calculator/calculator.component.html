@@ -1,0 +1,135 @@
+<section class="calculator-container">
+  <div class="calculator">
+    <section class="error">
+      {{ error }}
+    </section>
+    <div class="results">
+      <h2>{{ result }}</h2>
+    </div>
+    <div class="controls">
+      <div class="btn-factorial">
+        <input
+          type="button"
+          value="FACTORIAL"
+          class="operation"
+          (click)="addValue($event)"
+        />
+      </div>
+      <div class="operations">
+        <input
+          type="button"
+          value="7"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="8"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="9"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="DEL"
+          class="operation"
+          (click)="deleteValue()"
+        />
+        <input
+          type="button"
+          value="4"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="5"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="6"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="+"
+          class="operation"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="1"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="2"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="3"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="-"
+          class="operation"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="."
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="0"
+          class="numeric"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="/"
+          class="operation"
+          (click)="addValue($event)"
+        />
+        <input
+          type="button"
+          value="*"
+          class="operation"
+          (click)="addValue($event)"
+        />
+      </div>
+      <div class="btn-results">
+        <input
+          type="button"
+          value="RESET"
+          class="operation"
+          (click)="resetValues()"
+        />
+        <input
+          type="button"
+          value="="
+          class="operation"
+          (click)="calculate()"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="calculator-footer">
+    Prueba tecnica por: BRAINUP. Codificado por: Luis Calvillo.
+  </div>
+</section>
