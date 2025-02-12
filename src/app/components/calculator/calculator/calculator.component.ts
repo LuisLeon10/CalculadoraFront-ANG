@@ -114,6 +114,10 @@ export class CalculatorComponent {
   // }
 
   deleteValue() {
-    this.result = this.result.slice(0, -1);
+    if (typeof this.result === 'string') {
+      this.result = this.result.slice(0, -1);
+    } else {
+      this.result = String(this.result).slice(0, -1);
+    }
   }
 }
