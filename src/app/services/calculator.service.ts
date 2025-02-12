@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CalculatorService {
-  private urlApi = 'http://localhost:5211/api/calculator';
+  private urlApi = environment.apiUrl+'/calculator';
   constructor(private http: HttpClient) {}
 
   calculate(operation: string): Observable<any> {
